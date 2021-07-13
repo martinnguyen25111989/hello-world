@@ -1,3 +1,33 @@
+-----------------------------------------------------ODC team to Access to Azure Environments------------------------------------------------------------------------------
+I.	Azure Dev & Test
+1)	Step 1: RDS to 172.16.3.89 with domain account dicentral\your account. Request Thanh Thai add your account to RDS group if your domain account was not existing in RDS group
+2)	Step 2: From 172.16.3.89 RDS to VM on Azure Dev & Test with accounts:
+a)	dicservices\odcrouser1 (pass: m923DxfvVr)
+b)	dicservices\odcrouser2 (pass: D!c@#$%^&*19)
+
+II.	Azure Staging & PROD  (2hours/session)
+1)	Step 1: Request IT team to open access to GW 172.16.1.248
+2)	Step 2: RDS to 172.16.1.248 with accounts:
+a)	dicentral\odcrouser1 (pass: m923DxfvVr)
+b)	dicentral \odcrouser2 (pass: D!c@#$%^&*19)
+
+3)	Step 3: From 172.16.1.248 RDS to VM on Azure Dev & Test with accounts:
+i)	CACIP: (10.5.x.y)
+(1)	User1: cadicservices\odcrouser1 (pass: m923DxfvVr12)
+(2)	User2: cadicservices\odcrouser2 (pass: D!c@#$%^&*19)
+
+ii)	JPCIP: (10.4.x.y)
+(1)	User1: dicservices\odcrouser1 (pass: m923DxfvVr12)
+(2)	User2: dicservices\odcrouser2 (pass: D!c@#$%^&*19)
+
+iii)	Staging: (10.2.x.y) 
+(1)	User1: dicservices\odcrouser1 (pass: m923DxfvVr12)
+(2)	User2: dicservices\odcrouser2 (pass: D!c@#$%^&*19)
+
+Notes: This process is applied for SQLMI systems
+
+
+---------------------------------------------------------DiLabel Service/Web Pro QA----------------------------------------------------------------------------------------
 PRODUCTION:
 Production Server: 172.10.15.60 – DB Production: 172.10.15.61
 -	Version 1 (just keep online, don’t maintain): 
